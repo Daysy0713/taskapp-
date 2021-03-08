@@ -130,7 +130,8 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
             taskArray = realm.objects(Task.self)
         }
       else  if (count == 0 ){
-            taskArray = realm.objects(Task.self)}
+      taskArray = result
+           }
         else {
             taskArray = result
         }
